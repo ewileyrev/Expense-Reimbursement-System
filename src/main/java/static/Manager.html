@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manager System</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Styles/User.css" />
+</head>
+
+<body>
+    <form id="logout" align='right' method="POST" action="http://localhost:7000/logout">
+        <input type="submit" value="Log Out" required/>
+    </form>
+    <div>
+        <h1 align='center'>Welcome</h1>
+    </div>
+
+
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Pending Request')" id="defaultOpen">Pending Request</button>
+        <button class="tablinks" onclick="openTab(event, 'History')">History</button>
+        <button class="tablinks" onclick="openTab(event, 'Statistics')">Statistics</button>
+    </div>
+
+    <div id="Pending Request" class="tabcontent">
+    </div>
+
+    <div id="History" class="tabcontent">
+    </div>
+
+    <div id="Statistics" class="tabcontent">
+        <table>
+            <tr>
+                <th align="Left">Highest Single Request Owner</th>
+                <th id=hSpender></th>
+            </tr>
+            <tr>
+                <th align="Left">Highest Single Request</th>
+                <th id=hRequest></th>
+            </tr>
+            <tr>
+                <th align="Left">Total Request Cost</th>
+                <th id=total></th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+
+
+<script src="/Scripts/Session.js "></script>
+<script src="/Scripts/Manager.js "></script>
+
+</html>

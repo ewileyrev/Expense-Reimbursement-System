@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee System</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Styles/User.css" />
+</head>
+
+<body>
+    <form id="logout" align='right' method="POST" action="http://localhost:7000/logout">
+        <input id="logoutbutton" type="submit" value="Log Out" required/>
+    </form>
+    <div>
+        <h1 align='center'>Welcome</h1>
+    </div>
+
+
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Pending Request')" id="defaultOpen">Pending Request</button>
+        <button class="tablinks" onclick="openTab(event, 'History')">History</button>
+        <button id="newRequest" class="tablinks" onclick="openTab(event, 'New Request')">New Request</button>
+    </div>
+
+    <div id="Pending Request" class="tabcontent">
+    </div>
+
+    <div id="History" class="tabcontent">
+    </div>
+
+    <div id="New Request" align='center' class="tabcontent">
+        <form id="newRequestForm" method="POST" action="http://localhost:7000/newRequest">
+            <input id="requestName" type="text" placeholder="Request Name" required maxlength="20" name="rName" /><br>
+            <input id="Amount" type="text" placeholder="Amount" min="0.00" steps="0.01" name="amount" /><br>
+            <input id="submitRequest" type="submit" value="Submit Request" required/>
+        </form>
+    </div>
+</body>
+
+
+<script src="/Scripts/Employee.js "></script>
+<script src="/Scripts/Session.js "></script>
+
+
+</html>
