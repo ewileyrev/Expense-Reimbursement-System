@@ -6,22 +6,22 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 
 ## Technologies Used
 
-Java 8
-Hibernate
-Javalin
-AWS RDS
-SQL
-CSS
-HTML
-JavaScript
+* Java 8
+* Hibernate
+* Javalin
+* AWS RDS
+* SQL
+* CSS
+* HTML
+* JavaScript
 
 ## Features
 
 Employee
-  An employee can login to see their own reimbursements, past and pending
-  An employee can submit a reimbursement with an amount
+  * An employee can login to see their own reimbursements, past and pending
+  * An employee can submit a reimbursement with an amount
   
 Manager
-  A Manager can view all reimbursements past and pending
-  A Manager can approve or deny any reimbursement
-  Managers can view a statistics page
+  * A Manager can view all reimbursements past and pending
+  * A Manager can approve or deny any reimbursement
+  * Managers can view a statistics page
