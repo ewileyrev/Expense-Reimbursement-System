@@ -6,14 +6,14 @@ The Expense Reimbursement System (ERS) will manage the process of reimbursing em
 
 ## Technologies Used
 
-Java 8
-Hibernate
-Javalin
-AWS RDS
-SQL
-CSS
-HTML
-JavaScript
+#Java 8
+#Hibernate
+#Javalin
+#AWS RDS
+#SQL
+#CSS
+#HTML
+#JavaScript
 
 ## Features
 
